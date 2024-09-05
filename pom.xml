@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>mybatisplus-quickstart</module>
+        <module>mybatisplus-core</module>
     </modules>
 
     <properties>
