@@ -1,5 +1,7 @@
 package com.lordbao.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.baomidou.mybatisplus.annotation.Version;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,4 +19,10 @@ public class User {
     private String name;
     private Integer age;
     private String email;
+
+    @TableLogic
+    private Integer deleted;
+
+    @Version
+    private  Integer version;
 }
