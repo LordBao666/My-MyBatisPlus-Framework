@@ -17,6 +17,7 @@
     <modules>
         <module>mybatisplus-quickstart</module>
         <module>mybatisplus-core</module>
+        <module>mybatisplus-code-generator</module>
     </modules>
 
     <properties>
