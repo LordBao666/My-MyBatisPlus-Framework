@@ -106,14 +106,18 @@ public class MapperTest {
     }
     @Test
     public void testPage(){
-        Page<User> p = new Page<>(1,2);
+        //the first parameter is the current page you want to loop up,
+        //the second parameter is the size of each page
+        Page<User> p = new Page<>(5,2);
         userMapper.selectPage(p, null);
         List<User> userList = p.getRecords();
         System.out.println(userList);
-        System.out.println(p.getCurrent());//long: current page
-        System.out.println(p.getSize());//long: the size of current page
-        System.out.println(p.getTotal());//long: the total number of records
+        //long: current page,the first parameter of Page's constructor above
+        System.out.println(p.getCurrent());
+        //long: the size of each page, the second parameter  of Page's constructor above
+        System.out.println(p.getSize());
         System.out.println(p.getPages());//long: the total number of pages
+        System.out.println(p.getTotal());//long: the total number of records
         System.out.println(p.hasPrevious());//a boolean shows if p has previous page
         System.out.println(p.hasNext());//a boolean shows if p has next page
     }
