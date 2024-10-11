@@ -415,11 +415,15 @@ public class User {
 }
 ```
 
-
+**`@TableField`**也与后面的自动填充有关。
 
 
 
 ## MP高级拓展
+
+### 自动填充
+
+类似于`createTime`和`updateTime`这种字段往往需要用到自动填充。详见官网[自动填充](https://baomidou.com/guides/auto-fill-field/)。
 
 ### 分页实现
 
